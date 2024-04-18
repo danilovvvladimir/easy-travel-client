@@ -8,16 +8,20 @@ module.exports = {
     'plugin:prettier/recommended',
     // 'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
-    'plugin:storybook/recommended'
+    'plugin:storybook/recommended',
+    'plugin:i18next/recommended'
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: ['./tsconfig.json', './tsconfig.node.json']
   },
-  plugins: ['react-refresh'],
+  plugins: ['react-refresh', 'i18next'],
   rules: {
-    'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+    'react-refresh/only-export-components': [
+      'warn',
+      { allowConstantExport: true }
+    ],
     '@typescript-eslint/comma-dangle': 'off',
     'import/no-extraneous-dependencies': 'off',
     'import/no-absolute-path': 'off',
