@@ -9,7 +9,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="text-3xl font-bold underline">
       {t('title')}
       <button onClick={toggleLanguage}>123</button>
     </div>
