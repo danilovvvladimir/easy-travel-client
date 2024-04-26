@@ -1,33 +1,58 @@
 import { ButtonHTMLAttributes, FC } from 'react';
-import classNames from 'classnames';
-import styles from './Button.module.scss';
+import { VariantProps, cva } from 'class-variance-authority';
+import { Link } from 'react-router-dom';
+import cn from '../../utils/cn';
 
-export enum ButtonKind {
-  Primary,
-  PrimaryInverted,
-  Secondary,
-  SecondaryInverted
-}
+const buttonVariants = cva(
+  `inline-flex items-center justify-center 
+  rounded-md font-semibold no-underline 
+  transition-colors disabled:pointer-events-none disabled:opacity-50`,
+  {
+    variants: {
+      variant: {
+        primary: 'bg-primary text-white hover:bg-dark-primary',
+        secondary: 'bg-secondary text-white hover:bg-primary',
+        outline: 'bg-transparent text-primary border-2 border-primary'
+      },
+      size: {
+        base: 'px-4 py-2 text-base',
+        sm: 'px-4 py-2 text-sm',
+        lg: 'px-8 py-2 text-xl'
+      }
+    },
+    defaultVariants: {
+      variant: 'primary',
+      size: 'base'
+    }
+  }
+);
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  kind?: ButtonKind;
-  // TODO: сделать возможность создать button как Link
+interface ButtonProps
+  extends ButtonHTMLAttributes<HTMLButtonElement>,
+    VariantProps<typeof buttonVariants> {
+  href?: string;
 }
 
 const Button: FC<ButtonProps> = ({
   children,
   className,
-  kind = ButtonKind.Primary,
+  variant,
+  size,
+  href,
   ...restProps
 }) => {
-  const finalClassName = classNames(
-    styles.button,
-    styles[kind],
-    {
-      [styles.disabled]: restProps.disabled
-    },
-    className
-  );
+  const finalClassName = cn(buttonVariants({ variant, size, className }));
+
+  if (href) {
+    return (
+      <Link
+        to={href}
+        className={finalClassName}
+      >
+        {children}
+      </Link>
+    );
+  }
 
   return (
     <button

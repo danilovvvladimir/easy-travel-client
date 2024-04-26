@@ -33,6 +33,15 @@ module.exports = {
     'react/require-default-props': 'off',
     'react/function-component-definition': 'off',
     'react/jsx-props-no-spreading': 'off',
-    'react/no-unescaped-entities': 'off'
-  }
+    'react/no-unescaped-entities': 'off',
+    'react-refresh/only-export-components': 'off'
+  },
+  overrides: [
+    {
+      files: ['src/**/*.slice.ts'],
+      rules: {
+        'no-param-reassign': 'off'
+      }
+    }
+  ]
 };
