@@ -1,0 +1,22 @@
+@import "../../styles/variables.scss";
+
+.button {
+  padding: 8px 24px;
+  border-radius: $primary-border-radius;
+  cursor: pointer;
+
+  &.primary {
+    color: $white-color;
+    background-color: $primary-color;
+  }
+
+  &.secondary {
+    color: $white-color;
+    background-color: $secondary-color;
+  }
+
+  &.disabled {
+    color: $description-title-color;
+    background-color: $description-color;
+  }
+}
