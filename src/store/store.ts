@@ -4,7 +4,7 @@ import { themeReducer } from './slices/theme/theme.slice';
 
 const rootReducer = combineReducers({ theme: themeReducer });
 
-export function setupStore(preloadedState?: Partial<RootState>) {
+export function setupStore(preloadedState?: PreloadedState) {
   return configureStore({
     reducer: rootReducer,
     preloadedState
@@ -12,6 +12,7 @@ export function setupStore(preloadedState?: Partial<RootState>) {
 }
 
 export type RootState = ReturnType<typeof rootReducer>;
+export type PreloadedState = Partial<RootState>;
 export type AppStore = ReturnType<typeof setupStore>;
 export type AppDispatch = AppStore['dispatch'];
 

@@ -1,10 +1,10 @@
 import { FC, ReactNode } from 'react';
 import { Provider } from 'react-redux';
-import { RootState, setupStore } from '../../store/store';
+import { PreloadedState, setupStore } from '../../store/store';
 
 interface StoreProviderProps {
   children?: ReactNode;
-  preloadedState?: Partial<RootState>;
+  preloadedState?: PreloadedState;
 }
 
 const StoreProvider: FC<StoreProviderProps> = ({
