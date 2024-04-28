@@ -7,6 +7,7 @@ import {
   changeTheme,
   selectThemeMode
 } from '../../store/slices/theme/theme.slice';
+import Button from '../../components/Button/Button';
 
 const HomePage: FC = () => {
   const { t } = useTranslation();
@@ -29,13 +30,7 @@ const HomePage: FC = () => {
       {t('title')}
       <button onClick={toggleLanguage}>123</button>
       <Link to="about">2</Link>
-
-      <button
-        className={theme}
-        onClick={toggleTheme}
-      >
-        {theme}
-      </button>
+      <Button onClick={toggleTheme}>Sign Up</Button>
     </div>
   );
 };
