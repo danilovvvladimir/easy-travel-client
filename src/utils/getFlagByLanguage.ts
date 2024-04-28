@@ -1,12 +1,14 @@
 import type { Language } from '../types';
 
 function getFlagByLanguage(lang: Language): string {
+  const baseFlagPath = '/static/images/flags';
+
   switch (lang) {
     case 'ru':
-      return '/static/images/flags/russia.jpg';
+      return `${baseFlagPath}/russia.jpg`;
     case 'en':
     default:
-      return '/static/images/flags/usa.jpg';
+      return `${baseFlagPath}/usa.jpg`;
   }
 }
 

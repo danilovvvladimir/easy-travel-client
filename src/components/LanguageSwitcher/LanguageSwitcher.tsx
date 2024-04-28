@@ -8,7 +8,7 @@ interface LanguageSwitcherProps {}
 
 const LanguageSwitcher: FC<LanguageSwitcherProps> = () => {
   const [currentLanguageSrc, setCurrencyLanguageSrc] = useState<string>(
-    '/static/images/flags/usa.jpg'
+    getFlagByLanguage('en')
   );
 
   const toggleLanguage = async (): Promise<void> => {
@@ -22,7 +22,7 @@ const LanguageSwitcher: FC<LanguageSwitcherProps> = () => {
 
   return (
     <Button
-      className="border-light-primary border-2"
+      className="border-2 border-light-primary"
       variant="none"
       size="none"
       onClick={toggleLanguage}

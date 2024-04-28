@@ -10,11 +10,11 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        primary: 'bg-primary rounded-md text-white hover:bg-dark-primary',
-        secondary: 'bg-secondary rounded-md text-white hover:bg-primary',
+        primary: 'rounded-md bg-primary text-white hover:bg-dark-primary',
+        secondary: 'rounded-md bg-secondary text-white hover:bg-primary',
         outline:
-          'bg-transparent rounded-md text-primary border-2 border-primary hover:bg-primary hover:text-white',
-        none: 'bg-trasparent'
+          'rounded-md border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-white',
+        none: 'bg-transparent'
       },
       size: {
         base: 'px-4 py-2 text-base',
