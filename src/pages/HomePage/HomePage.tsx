@@ -8,6 +8,7 @@ import {
   selectThemeMode
 } from '../../store/slices/theme/theme.slice';
 import Button from '../../components/Button/Button';
+import Header from '../../components/Header/Header';
 
 const HomePage: FC = () => {
   const { t } = useTranslation();
@@ -26,12 +27,13 @@ const HomePage: FC = () => {
   };
 
   return (
-    <div className="text-3xl font-bold underline">
+    <>
+      <Header />
       {t('title')}
       <button onClick={toggleLanguage}>123</button>
       <Link to="about">2</Link>
       <Button onClick={toggleTheme}>Sign Up</Button>
-    </div>
+    </>
   );
 };
 
