@@ -1,4 +1,6 @@
 import { Decorator } from '@storybook/react';
 import '../../src/styles/globals.css';
 
-export const StyleDecorator: Decorator = (Story) => Story();
+const StyleDecorator: Decorator = (Story) => Story();
+
+export default StyleDecorator;

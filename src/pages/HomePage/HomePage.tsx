@@ -30,12 +30,7 @@ const HomePage: FC = () => {
       {t('title')}
       <button onClick={toggleLanguage}>123</button>
       <Link to="about">2</Link>
-      <Button
-        href="/about"
-        onClick={toggleTheme}
-      >
-        Sign Up
-      </Button>
+      <Button onClick={toggleTheme}>Sign Up</Button>
     </div>
   );
 };
