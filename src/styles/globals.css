@@ -25,7 +25,8 @@ body {
     --color-title: 0 26 52;
     --color-description: 155 165 175;
     --color-description-title: 92 103 114;
-    --color-description-light: 245 245 245;
+    --color-description-light: 239 238 238;
+    --color-description-medium: 217 217 217;
     --color-gold: 255 168 0;
     --color-success: 12 187 70;
     --color-white: 255 255 255;
