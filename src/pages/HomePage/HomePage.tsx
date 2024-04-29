@@ -1,12 +1,14 @@
 import { FC } from 'react';
 import i18next from 'i18next';
-import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { useAppDispatch, useAppSelector } from '../../store/store';
 import {
   changeTheme,
   selectThemeMode
 } from '../../store/slices/theme/theme.slice';
+import Header from '../../components/Header/Header';
+import Button from '../../components/Button/Button';
 
 const HomePage: FC = () => {
   const { t } = useTranslation();
@@ -25,18 +27,12 @@ const HomePage: FC = () => {
   };
 
   return (
-    <div className="text-3xl font-bold underline">
-      {t('title')}
+    <>
+      <Header />
       <button onClick={toggleLanguage}>123</button>
       <Link to="about">2</Link>
-
-      <button
-        className={theme}
-        onClick={toggleTheme}
-      >
-        {theme}
-      </button>
-    </div>
+      <Button onClick={toggleTheme}>{t('sign_up')}</Button>
+    </>
   );
 };
 

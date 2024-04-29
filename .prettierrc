@@ -5,6 +5,7 @@
   "trailingComma": "none",
   "endOfLine": "auto",
   "singleAttributePerLine": true,
+  // "plugins": ["prettier-plugin-tailwindcss"],
   "overrides": [
     {
       "files": "*.md",
