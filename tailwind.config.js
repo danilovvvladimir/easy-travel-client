@@ -2,6 +2,10 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    container: {
+      center: true,
+      padding: '1rem'
+    },
     extend: {
       colors: {
         primary: 'rgb(var(--color-primary) / <alpha-value>)',
@@ -14,7 +18,8 @@ export default {
         'description-light': 'rgb(var(--description-light) / <alpha-value>)',
         gold: 'rgb(var(--color-gold) / <alpha-value>)',
         success: 'rgb(var(--color-success) / <alpha-value>)',
-        white: 'rgb(var(--color-white) / <alpha-value>)'
+        white: 'rgb(var(--color-white) / <alpha-value>)',
+        'light-primary': 'rgb(var(--color-light-primary) / <alpha-value>)'
       }
     }
   },

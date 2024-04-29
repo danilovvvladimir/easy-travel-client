@@ -6,7 +6,8 @@ module.exports = {
     'airbnb-typescript',
     'eslint:recommended',
     'plugin:prettier/recommended',
-    // 'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:tailwindcss/recommended',
     'plugin:react-hooks/recommended',
     'plugin:storybook/recommended',
     'plugin:i18next/recommended'
@@ -27,7 +28,6 @@ module.exports = {
     'import/no-absolute-path': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/button-has-type': 'off',
-    // 'react/jsx-one-expression-per-line': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/no-shadow': 'off',
     'react/require-default-props': 'off',
