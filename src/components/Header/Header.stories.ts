@@ -1,9 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import Header from './Header';
+import WidthDecorator from '../../../.storybook/decorators/WidthDecorator';
 
 const meta: Meta<typeof Header> = {
   title: 'Header',
   component: Header,
+  decorators: [WidthDecorator],
   parameters: {
     layout: 'centered'
   },
