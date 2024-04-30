@@ -26,7 +26,7 @@ const Header: FC<HeaderProps> = ({ className, size }) => {
   const { t } = useTranslation();
 
   return (
-    <header className="border-b-DEFAULT border-light-primary">
+    <header className="border-b border-light-primary">
       <div className={cn(headerVariants({ size, className }))}>
         <Logo />
         <div className="flex items-center justify-center gap-5 ">
