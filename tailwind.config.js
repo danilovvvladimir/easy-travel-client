@@ -14,8 +14,12 @@ export default {
         accent: 'rgb(var(--color-accent) / <alpha-value>)',
         title: 'rgb(var(--color-title) / <alpha-value>)',
         description: 'rgb(var(--color-description) / <alpha-value>)',
-        'description-title': 'rgb(var(--description-title) / <alpha-value>)',
-        'description-light': 'rgb(var(--description-light) / <alpha-value>)',
+        'description-title':
+          'rgb(var(--color-description-title) / <alpha-value>)',
+        'description-light':
+          'rgb(var(--color-description-light) / <alpha-value>)',
+        'description-medium':
+          'rgb(var(--color-description-medium) / <alpha-value>)',
         gold: 'rgb(var(--color-gold) / <alpha-value>)',
         success: 'rgb(var(--color-success) / <alpha-value>)',
         white: 'rgb(var(--color-white) / <alpha-value>)',
