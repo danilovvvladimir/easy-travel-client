@@ -11,6 +11,7 @@ import {
 import Header from '../../components/Header/Header';
 import Button from '../../components/Button/Button';
 import Chip from '../../components/Chip/Chip';
+import TextWithLabel from '../../components/TextWithLabel/TextWithLabel';
 
 const HomePage: FC = () => {
   const { t } = useTranslation();
@@ -36,6 +37,12 @@ const HomePage: FC = () => {
       <Button onClick={toggleTheme}>{t('sign_up')}</Button>
       <div>
         <Chip onClick={() => console.log(1)}>chip</Chip>
+      </div>
+      <div style={{ width: 400 }}>
+        <TextWithLabel
+          text="Where do you want to go?"
+          label="Find accommodation in"
+        />
       </div>
     </>
   );
