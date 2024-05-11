@@ -2,13 +2,13 @@ import { FC, HTMLAttributes } from 'react';
 import cn from '../../utils/cn';
 import Button from '../Button/Button';
 
-interface TextWithLabelProps extends HTMLAttributes<HTMLButtonElement> {
+interface TextWithLabelProps
+  extends Omit<HTMLAttributes<HTMLButtonElement>, 'children'> {
   text: string;
   label: string;
 }
 
 const TextWithLabel: FC<TextWithLabelProps> = ({
-  children,
   className,
   onClick,
   text,
