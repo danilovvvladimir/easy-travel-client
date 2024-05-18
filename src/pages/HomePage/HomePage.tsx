@@ -12,6 +12,7 @@ import Header from '../../components/Header/Header';
 import Button from '../../components/Button/Button';
 import Chip from '../../components/Chip/Chip';
 import TextWithLabel from '../../components/TextWithLabel/TextWithLabel';
+import PopularDestination from '../../components/PopularDestination/PopularDestination';
 
 const HomePage: FC = () => {
   const { t } = useTranslation();
@@ -42,6 +43,15 @@ const HomePage: FC = () => {
         <TextWithLabel
           text="Where do you want to go?"
           label="Find accommodation in"
+        />
+      </div>
+
+      <div>
+        <PopularDestination
+          city="Paris"
+          country="France"
+          img="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg"
+          onClick={() => console.log(1)}
         />
       </div>
     </>
