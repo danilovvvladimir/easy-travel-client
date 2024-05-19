@@ -32,7 +32,6 @@ const RoomPreview: FC<RoomPreviewProps> = ({
 }) => {
   const { t } = useTranslation();
 
-  //   TODO: add posibility to mount it as a link
   return (
     <div className="w-full">
       {href ? (
