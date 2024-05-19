@@ -1,7 +1,10 @@
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+import Icon, { IconName } from '../Icon/Icon';
 
 export interface RoomPreviewProps {
+  href?: string;
   img: string;
   title: string;
   unitType: string;
@@ -15,6 +18,7 @@ export interface RoomPreviewProps {
 }
 
 const RoomPreview: FC<RoomPreviewProps> = ({
+  href,
   img,
   location,
   title,
@@ -31,22 +35,38 @@ const RoomPreview: FC<RoomPreviewProps> = ({
   //   TODO: add posibility to mount it as a link
   return (
     <div className="w-full">
-      <img
-        className="mb-2 rounded-lg"
-        src={img}
-        alt={title}
-      />
+      {href ? (
+        <Link to={href}>
+          <img
+            className="mb-2 rounded-lg"
+            src={img}
+            alt={title}
+          />
+        </Link>
+      ) : (
+        <img
+          className="mb-2 rounded-lg"
+          src={img}
+          alt={title}
+        />
+      )}
 
       <div className="mb-1.5 flex justify-between font-semibold text-title">
         <span>
           {unitType}, {location}
         </span>
-        {/* TODO: icon component */}
-        <span>{rating}</span>
+        <div className="flex items-center">
+          <Icon
+            name={IconName.STAR}
+            className="size-4"
+          />
+          <span className="ml-0.5">{rating}</span>
+        </div>
       </div>
 
       <div className="mb-2 text-sm text-description">
         <div className="mb-1">{title}</div>
+
         {maxGuests && (
           <span>{t('room_description.max_guests', { count: maxGuests })}</span>
         )}

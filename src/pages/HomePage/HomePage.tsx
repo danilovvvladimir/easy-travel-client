@@ -72,7 +72,10 @@ const HomePage: FC = () => {
       </div>
 
       <div className="w-[250px]">
-        <RoomPreview {...roomPreviewProps} />
+        <RoomPreview
+          href="/about"
+          {...roomPreviewProps}
+        />
       </div>
     </>
   );
