@@ -13,6 +13,9 @@ import Button from '../../components/Button/Button';
 import Chip from '../../components/Chip/Chip';
 import TextWithLabel from '../../components/TextWithLabel/TextWithLabel';
 import PopularDestination from '../../components/PopularDestination/PopularDestination';
+import RoomPreview, {
+  RoomPreviewProps
+} from '../../components/RoomPreview/RoomPreview';
 
 const HomePage: FC = () => {
   const { t } = useTranslation();
@@ -28,6 +31,19 @@ const HomePage: FC = () => {
     const newThemeMode = theme === 'dark' ? 'light' : 'dark';
 
     dispatch(changeTheme(newThemeMode));
+  };
+
+  const roomPreviewProps: RoomPreviewProps = {
+    img: 'https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg',
+    title: 'Dimora Natura-Riserva Naturale Valle di Bondo',
+    unitType: 'Entire rental unit',
+    location: 'Italy',
+    rating: 4.85,
+    price: 380,
+    maxGuests: 8,
+    bedrooms: 2,
+    beds: 4,
+    baths: 1
   };
 
   return (
@@ -53,6 +69,10 @@ const HomePage: FC = () => {
           img="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg"
           onClick={() => console.log(1)}
         />
+      </div>
+
+      <div className="w-[250px]">
+        <RoomPreview {...roomPreviewProps} />
       </div>
     </>
   );

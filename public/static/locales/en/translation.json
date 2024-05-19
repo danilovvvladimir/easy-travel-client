@@ -1,4 +1,13 @@
 {
-  "sign_in": "Sign in",
-  "sign_up": "Sign up"
+  "sign_in": "Sign In",
+  "sign_up": "Sign up",
+  "per_night": "per night",
+  "room_description.max_guests_one": "{{count}} guest",
+  "room_description.max_guests_other": "{{count}} guests",
+  "room_description.bedrooms_one": "{{count}} bedroom",
+  "room_description.bedrooms_other": "{{count}} bedrooms",
+  "room_description.beds_one": "{{count}} bed",
+  "room_description.beds_other": "{{count}} beds",
+  "room_description.baths_one": "{{count}} bath",
+  "room_description.baths_other": "{{count}} baths"
 }
