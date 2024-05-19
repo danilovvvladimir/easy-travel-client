@@ -1,4 +1,17 @@
 {
   "sign_in": "Войти",
-  "sign_up": "Зарегистрироваться"
+  "sign_up": "Зарегистрироваться",
+  "per_night": "за ночь",
+  "room_description.max_guests_one": "{{count}} гость",
+  "room_description.max_guests_few": "{{count}} гостя",
+  "room_description.max_guests_many": "{{count}} гостей",
+  "room_description.bedrooms_one": "{{count}} спальня",
+  "room_description.bedrooms_few": "{{count}} спальни",
+  "room_description.bedrooms_many": "{{count}} спален",
+  "room_description.beds_one": "{{count}} кровать",
+  "room_description.beds_few": "{{count}} кровати",
+  "room_description.beds_many": "{{count}} кроватей",
+  "room_description.baths_one": "{{count}} ванная",
+  "room_description.baths_few": "{{count}} ванны",
+  "room_description.baths_many": "{{count}} ванн"
 }
