@@ -9,6 +9,7 @@ import {
 import Header from '../../components/Header/Header';
 import Button from '../../components/Button/Button';
 import RentPropertyBanner from '../../components/RentPropertyBanner/RentPropertyBanner';
+import Benefits from '../../components/Benefits/Benefits';
 
 const HomePage: FC = () => {
   const { t } = useTranslation();
@@ -27,6 +28,7 @@ const HomePage: FC = () => {
       <Header />
       <Button onClick={toggleTheme}>123</Button>
       <RentPropertyBanner />
+      <Benefits />
     </>
   );
 };
