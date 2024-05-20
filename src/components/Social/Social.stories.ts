@@ -11,7 +11,7 @@ const meta: Meta<typeof Social> = {
   },
   decorators: [WidthDecorator],
   args: {
-    name: IconName.STAR
+    name: IconName.INSTAGRAM
   },
   argTypes: {
     name: {

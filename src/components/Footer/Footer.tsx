@@ -38,6 +38,7 @@ const Footer: FC<FooterProps> = ({ className, size }) => {
         <div className="flex gap-8">
           {t('copyright')}
           <div className="flex gap-4 text-description-title">
+            {/* TODO: make them open in modal */}
             <span>{t('terms')}</span>
             <span>{t('privacy')}</span>
           </div>
