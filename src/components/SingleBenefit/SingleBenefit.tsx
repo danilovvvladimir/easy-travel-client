@@ -1,5 +1,6 @@
 import { FC } from 'react';
-import Icon, { IconName } from '../Icon/Icon';
+import Icon from '../Icon/Icon';
+import { IconName } from '../../types';
 
 interface SingleBenefitProps extends Benefit {}
 

@@ -1,13 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Icon from './Icon';
+import Social from './Social';
 import { IconName } from '../../types';
+import WidthDecorator from '../../../.storybook/decorators/WidthDecorator';
 
-const meta: Meta<typeof Icon> = {
-  title: 'Icon',
-  component: Icon,
+const meta: Meta<typeof Social> = {
+  title: 'Social',
+  component: Social,
   parameters: {
     layout: 'centered'
   },
+  decorators: [WidthDecorator],
   args: {
     name: IconName.STAR
   },
@@ -25,6 +27,10 @@ const meta: Meta<typeof Icon> = {
   tags: ['autodocs']
 };
 export default meta;
-type Story = StoryObj<typeof Icon>;
+type Story = StoryObj<typeof Social>;
 
-export const Default: Story = {};
+export const Default: Story = {
+  args: {
+    href: 'www.google.com'
+  }
+};

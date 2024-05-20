@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import SingleBenefit, { Benefit } from '../SingleBenefit/SingleBenefit';
-import { IconName } from '../Icon/Icon';
+import { IconName } from '../../types';
 
 interface BenefitsProps {}
 
