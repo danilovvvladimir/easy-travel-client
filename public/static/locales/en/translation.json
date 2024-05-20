@@ -11,5 +11,12 @@
   "room_description.baths_one": "{{count}} bath",
   "room_description.baths_other": "{{count}} baths",
   "rent_property.title": "Want to rent out your property?",
-  "rent_property.try": "Try it out"
+  "rent_property.try": "Try it out",
+  "benefits.peace_of_mind.title": "Stay with Peace of Mind",
+  "benefits.peace_of_mind.description": "Enjoy the comfort of verified homes and communicate directly",
+  "benefits.book_confidently.title": "Book confidently",
+  "benefits.book_confidently.description": "You can easily find exactly what you're looking for, and know exactly what you'll get",
+  "benefits.flexible_planning.title": "Flexible Planning",
+  "benefits.flexible_planning.description": "You can plan your trip with ease ensuring your travels fit your life perfectly",
+  "benefits.why_easy_travel": "Why EasyTravel?"
 }
