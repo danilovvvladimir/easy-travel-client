@@ -13,5 +13,7 @@
   "room_description.beds_many": "{{count}} кроватей",
   "room_description.baths_one": "{{count}} ванная",
   "room_description.baths_few": "{{count}} ванны",
-  "room_description.baths_many": "{{count}} ванн"
+  "room_description.baths_many": "{{count}} ванн",
+  "rent_property.title": "Хотите сдавать свои помещения?",
+  "rent_property.try": "Попробовать"
 }

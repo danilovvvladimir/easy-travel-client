@@ -9,5 +9,7 @@
   "room_description.beds_one": "{{count}} bed",
   "room_description.beds_other": "{{count}} beds",
   "room_description.baths_one": "{{count}} bath",
-  "room_description.baths_other": "{{count}} baths"
+  "room_description.baths_other": "{{count}} baths",
+  "rent_property.title": "Want to rent out your property?",
+  "rent_property.try": "Try it out"
 }
