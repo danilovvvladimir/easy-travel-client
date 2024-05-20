@@ -1,6 +1,4 @@
-/* eslint-disable i18next/no-literal-string */
 import { FC } from 'react';
-import { useTranslation } from 'react-i18next';
 import { useAppDispatch, useAppSelector } from '../../store/store';
 import {
   changeTheme,
@@ -10,10 +8,9 @@ import Header from '../../components/Header/Header';
 import Button from '../../components/Button/Button';
 import RentPropertyBanner from '../../components/RentPropertyBanner/RentPropertyBanner';
 import Benefits from '../../components/Benefits/Benefits';
+import Footer from '../../components/Footer/Footer';
 
 const HomePage: FC = () => {
-  const { t } = useTranslation();
-
   const dispatch = useAppDispatch();
   const theme = useAppSelector(selectThemeMode);
 
@@ -26,9 +23,12 @@ const HomePage: FC = () => {
   return (
     <>
       <Header />
-      <Button onClick={toggleTheme}>123</Button>
-      <RentPropertyBanner />
-      <Benefits />
+      <main className="flex-1">
+        <Button onClick={toggleTheme}>123</Button>
+        <RentPropertyBanner />
+        <Benefits />
+      </main>
+      <Footer />
     </>
   );
 };

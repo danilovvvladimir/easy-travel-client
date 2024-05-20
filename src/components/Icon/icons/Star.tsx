@@ -1,7 +1,7 @@
 import { FC } from 'react';
-import type { SingleIconProps } from '../Icon';
+import { SingleIcon } from '../../../types';
 
-const Star: FC<SingleIconProps> = ({ className }) => {
+const Star: FC<SingleIcon> = ({ className }) => {
   return (
     <svg
       className={className}

@@ -2,7 +2,7 @@
 export default {
   content: [
     './index.html',
-    './.storybook/**/*.{js,ts,jsx,tsx}.',
+    './.storybook/**/*.{js,ts,jsx,tsx}',
     './src/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
