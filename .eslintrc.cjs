@@ -42,6 +42,12 @@ module.exports = {
       rules: {
         'no-param-reassign': 'off'
       }
+    },
+    {
+      files: ['src/**/*.test.{ts,tsx}'],
+      rules: {
+        'i18next/no-literal-string': 'off'
+      }
     }
   ]
 };

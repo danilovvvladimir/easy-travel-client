@@ -27,11 +27,12 @@ const HomePage: FC = () => {
   };
 
   const [isOpened, setIsOpened] = useState(false);
-  // const anchorElementRef = useRef<HTMLButtonElement | null>(null);
 
   const [anchorElement, setAnchorElement] = useState<HTMLButtonElement | null>(
     null
   );
+
+  console.log('Render homepage');
 
   return (
     <>
@@ -50,9 +51,9 @@ const HomePage: FC = () => {
         {isOpened && anchorElement && (
           <Popover
             anchorElement={anchorElement}
-            onClickOutside={() => setIsOpened((opened) => !opened)}
-            placement="right-end"
-            withArrow
+            closePopover={() => setIsOpened(false)}
+            onClickOutside={() => console.log('Test on click outside')}
+            placement="bottom"
           >
             Popover content
           </Popover>
