@@ -1,10 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import RoomPreview from './RoomPreview';
+import PlacePreview from './PlacePreview';
+import { PlaceType } from '../../types';
 
-const roomPreviewProps = {
+const placePreviewProps: PlaceType = {
   img: 'https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg',
   title: 'Dimora Natura-Riserva Naturale Valle di Bondo',
-  unitType: 'Entire rental unit',
+  unit: 'Entire rental unit',
+  slug: 'dimora-natura-riserva',
   location: 'Italy',
   rating: 4.85,
   price: 380,
@@ -14,24 +16,22 @@ const roomPreviewProps = {
   baths: 1
 };
 
-const meta: Meta<typeof RoomPreview> = {
-  title: 'RoomPreview',
-  component: RoomPreview,
+const meta: Meta<typeof PlacePreview> = {
+  title: 'PlacePreview',
+  component: PlacePreview,
   parameters: {
     layout: 'centered'
   },
   args: {
-    ...roomPreviewProps
+    ...placePreviewProps
   },
   tags: ['autodocs']
 };
 export default meta;
-type Story = StoryObj<typeof RoomPreview>;
+type Story = StoryObj<typeof PlacePreview>;
 
 export const Default: Story = {};
 
 export const Clickable: Story = {
-  args: {
-    href: '/about'
-  }
+  args: {}
 };
