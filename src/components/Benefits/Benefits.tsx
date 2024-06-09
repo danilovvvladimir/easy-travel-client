@@ -8,6 +8,7 @@ interface BenefitsProps {}
 const Benefits: FC<BenefitsProps> = () => {
   const { t } = useTranslation();
 
+  // TODO: get this info from server
   const BENEFITS: ReadonlyArray<Benefit> = [
     {
       title: t('benefits.peace_of_mind.title'),

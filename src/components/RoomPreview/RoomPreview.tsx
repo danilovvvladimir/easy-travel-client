@@ -1,7 +1,8 @@
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import Icon, { IconName } from '../Icon/Icon';
+import Icon from '../Icon/Icon';
+import { IconName } from '../../types';
 
 export interface RoomPreviewProps {
   href?: string;

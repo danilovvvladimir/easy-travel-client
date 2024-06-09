@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { t } from 'i18next';
 import SingleBenefit from './SingleBenefit';
-import { IconName } from '../Icon/Icon';
+import { IconName } from '../../types';
 
 const meta: Meta<typeof SingleBenefit> = {
   title: 'SingleBenefit',

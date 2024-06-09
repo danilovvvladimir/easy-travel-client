@@ -1,4 +1,4 @@
-import LANGUAGES from './constants';
+import { LANGUAGES } from './constants';
 
 export type Language = (typeof LANGUAGES)[number];
 
