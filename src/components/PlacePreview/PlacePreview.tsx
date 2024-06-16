@@ -2,39 +2,32 @@ import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import Icon from '../Icon/Icon';
-import { IconName } from '../../types';
+import { IconName, PlaceType } from '../../types';
+import cn from '../../utils/cn';
 
-export interface RoomPreviewProps {
-  href?: string;
-  img: string;
-  title: string;
-  unitType: string;
-  location: string;
-  rating: number;
-  price: number;
-  maxGuests?: number;
-  bedrooms?: number;
-  beds?: number;
-  baths?: number;
+export interface PlacePreviewProps extends PlaceType {
+  className?: string;
 }
 
-const RoomPreview: FC<RoomPreviewProps> = ({
-  href,
+const PlacePreview: FC<PlacePreviewProps> = ({
   img,
   location,
   title,
-  unitType,
+  slug,
+  unit,
   rating,
   price,
   baths,
   bedrooms,
   beds,
-  maxGuests
+  maxGuests,
+  className
 }) => {
   const { t } = useTranslation();
+  const href = `/place/${slug}`;
 
   return (
-    <div className="w-full">
+    <div className={cn('w-full', className)}>
       {href ? (
         <Link to={href}>
           <img
@@ -53,7 +46,7 @@ const RoomPreview: FC<RoomPreviewProps> = ({
 
       <div className="mb-1.5 flex justify-between font-semibold text-title">
         <span>
-          {unitType}, {location}
+          {unit}, {location}
         </span>
         <div className="flex items-center">
           <Icon
@@ -87,4 +80,4 @@ const RoomPreview: FC<RoomPreviewProps> = ({
   );
 };
 
-export default RoomPreview;
+export default PlacePreview;

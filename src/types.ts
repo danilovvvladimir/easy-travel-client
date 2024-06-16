@@ -15,3 +15,18 @@ export enum IconName {
 export interface SingleIcon {
   className?: string;
 }
+
+// TODO: extend
+export interface PlaceType {
+  img: string;
+  title: string;
+  slug: string;
+  unit: string;
+  location: string;
+  rating: number;
+  price: number;
+  maxGuests?: number;
+  bedrooms?: number;
+  beds?: number;
+  baths?: number;
+}
