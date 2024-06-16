@@ -27,7 +27,11 @@ export default {
         gold: 'rgb(var(--color-gold) / <alpha-value>)',
         success: 'rgb(var(--color-success) / <alpha-value>)',
         white: 'rgb(var(--color-white) / <alpha-value>)',
-        'light-primary': 'rgb(var(--color-light-primary) / <alpha-value>)'
+        'light-primary': 'rgb(var(--color-light-primary) / <alpha-value>)',
+        'rating-very-low': 'rgb(var(--color-rating-very-low) / <alpha-value>)',
+        'rating-low': 'rgb(var(--color-rating-low) / <alpha-value>)',
+        'rating-medium': 'rgb(var(--color-rating-medium) / <alpha-value>)',
+        'rating-high': 'rgb(var(--color-rating-high) / <alpha-value>)'
       }
     }
   },

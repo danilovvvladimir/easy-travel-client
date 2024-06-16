@@ -10,7 +10,7 @@ const headerVariants = cva(`flex items-center justify-between py-4`, {
   variants: {
     size: {
       base: 'container max-w-7xl',
-      lg: 'mx-auto px-5'
+      lg: 'mx-auto px-8'
     }
   },
   defaultVariants: {
