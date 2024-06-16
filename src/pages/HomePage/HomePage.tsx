@@ -16,6 +16,7 @@ const HomePage: FC = () => {
   const dispatch = useAppDispatch();
   const theme = useAppSelector(selectThemeMode);
 
+  // TODO: Move it into footer/header
   const toggleTheme = () => {
     const newThemeMode = theme === 'dark' ? 'light' : 'dark';
 
@@ -133,6 +134,7 @@ const HomePage: FC = () => {
     <>
       <Header />
       <main className="flex-1">
+        {/* TODO: Move it into footer/header */}
         <Button onClick={toggleTheme}>123</Button>
         <PopularPlaceTypes places={popularPlaceTypes} />
         <RentPropertyBanner />

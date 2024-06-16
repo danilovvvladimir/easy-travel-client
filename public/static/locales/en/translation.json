@@ -21,6 +21,12 @@
   "benefits.why_easy_travel": "Why EasyTravel?",
   "current_language": "English (US)",
   "popular_places.the_most_popular_booking_places": "The most popular booking places",
+  "reviews_one": "{{count}} review",
+  "reviews_other": "{{count}} reviews",
+  "total.period_one": "Total per {{count}} night",
+  "total.period_other": "Total per {{count}} nights",
+  "meal_included": "{{meal}} included",
+  "reserve": "Reserve",
   "terms": "Terms",
   "privacy": "Privacy",
   "copyright": "© 2024 EasyTravel, Inc."

@@ -28,6 +28,10 @@ body {
     --color-description-light: 239 238 238;
     --color-description-medium: 217 217 217;
     --color-gold: 255 168 0;
+    --color-rating-very-low: 254 90 80;
+    --color-rating-low: 235 179 35;
+    --color-rating-medium: 138 187 0;
+    --color-rating-high: 12 187 70;
     --color-success: 12 187 70;
     --color-white: 255 255 255;
     --color-light-primary: 235 247 255;
