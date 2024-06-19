@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import { useAppDispatch, useAppSelector } from '../../store/store';
 import {
   changeTheme,
@@ -11,6 +11,7 @@ import Benefits from '../../components/Benefits/Benefits';
 import Footer from '../../components/Footer/Footer';
 import { PlaceType } from '../../types';
 import PopularPlaceTypes from '../../components/PopularPlaceTypes/PopularPlaceTypes';
+import Slider from '../../components/Slider/Slider';
 
 const HomePage: FC = () => {
   const dispatch = useAppDispatch();
@@ -129,11 +130,28 @@ const HomePage: FC = () => {
     }
   ];
 
+  const [price, setPrice] = useState([0, 100]);
+
   return (
     <>
       <Header />
       <main className="flex-1">
         <Button onClick={toggleTheme}>123</Button>
+        <div className="w-[500px]">
+          <div>{price[0]}</div>
+          <div>{price[1]}</div>
+
+          <Slider
+            value={price}
+            onChange={(value) => {
+              setPrice(value);
+            }}
+            defaultValue={[0, 100]}
+            ariaLabel={['Leftmost thumb', 'Rightmost thumb']}
+            pearling
+            minDistance={10}
+          />
+        </div>
         <PopularPlaceTypes places={popularPlaceTypes} />
         <RentPropertyBanner />
         <Benefits />
