@@ -1,0 +1,40 @@
+.horizontal-slider {
+  height: 25px;
+}
+
+.horizontal-thumb {
+  background-color: rgba(var(--color-white) / 1);
+  color: rgba(var(--color-primary) / 1);
+  cursor: pointer;
+  border: 4px solid rgba(var(--color-primary) / 1);
+  border-radius: 50%;
+  box-sizing: border-box;
+  transition: background-color ease 0.1s;
+  outline: none;
+}
+
+.horizontal-thumb:hover {
+  background-color: rgba(var(--color-primary) / 1);
+}
+
+.horizontal-track {
+  position: relative;
+  background: #ddd;
+}
+
+.horizontal-track.horizontal-track-1 {
+  background: rgba(var(--color-primary) / 1);
+}
+
+.horizontal-slider .horizontal-track {
+  top: 50%;
+  transform: translateY(-50%);
+  height: 4px;
+}
+
+.horizontal-slider .horizontal-thumb {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+}
